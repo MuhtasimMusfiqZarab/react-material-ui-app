@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  IconButton,
-  MenuIcon
-} from "@material-ui/core";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
 
 const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="headline" color="inherit">
-          News
+        <Typography variant="subtitle1" color="inherit">
+          Exercise Database
         </Typography>
       </Toolbar>
     </AppBar>
