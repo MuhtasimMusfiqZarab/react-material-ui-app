@@ -7,7 +7,8 @@ import { muscles, exercises } from "./store";
 class App extends Component {
   //as exercises changes thus we put them inside state
   state = {
-    exercises
+    exercises,
+    catagory: ""
   };
 
   getExercisesByMuscles() {
@@ -22,13 +23,25 @@ class App extends Component {
     );
   }
 
+  //handlechange on foooter
+  handlechange = catagory => {
+    this.setState({
+      catagory
+    });
+  };
+
   render() {
     const exercises = this.getExercisesByMuscles();
+    const { catagory } = this.state;
     return (
       <Fragment>
         <Header />
         <Content exercises={exercises} />
-        <Footer muscles={muscles} />
+        <Footer
+          muscles={muscles}
+          handlechange={this.handlechange}
+          catagory={catagory}
+        />
       </Fragment>
     );
   }
