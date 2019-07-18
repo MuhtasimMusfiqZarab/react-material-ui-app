@@ -46,7 +46,7 @@ const Content = ({ exercises }) => {
         <Paper style={styles.Paper}>
           <Typography variant="display1">Welcome!</Typography>
           <Typography variant="subtitle1" style={{ marginTop: 20 }}>
-            Please select an exercise from the list on the left.
+            Please select an exercise from the list on the left :)
           </Typography>
         </Paper>
       </Grid>
